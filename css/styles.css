@@ -1,0 +1,309 @@
+body {
+  font-family: 'Montserrat-Black', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.section-heading {
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+  < !-- bu kısmı ben ayarladım zevkime göre -->
+}
+
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/* Navigation Bar */
+.fa-paw {
+  margin-right: 5px;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  right: 50px;
+}
+
+.navbar {
+  padding: 2rem 0 4.5rem 0;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-family: "Montserrat";
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+#title .container-fluid {
+  padding: 3% 15%;
+  /** I'd rather have 3 15 7 padding here**/
+  text-align: left;
+}
+
+.title-img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 8.75rem;
+}
+
+/* Features Section */
+#features {
+  padding: 7% 15%;
+  position: relative;
+  z-index: 1;
+  /** you can delete this line, cuz it's not necessary. Check the flowchart to **/
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.features-icons {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.features-icons:hover {
+  color: #ff4c68;
+}
+
+/* testimonials */
+#testimonials {
+  background-color: #ef8172;
+  border-style: solid;
+  border-color: #343a40;
+  border-width: 2px;
+  border-bottom: none;
+}
+
+.carousel-inner {
+  /* background-color: red; */
+  height: 500px;
+}
+
+.carousel-item {
+  height: inherit;
+  /* max-height: 600px !important; */
+  /* background-color: navy; */
+}
+
+.testimonial-text {
+  line-height: 1.5;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.6rem;
+  /* If font-size is 2.8rem then the testimonial container moves and
+   changes its width as it goes to the next slide, for some reason.
+   Probably because it's too much to fit into its container when its 2.8rem.*/
+}
+
+.testimonial-image {
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+
+/* Press Section */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 2%;
+  border-style: solid;
+  border-color: #343a40;
+  border-width: 2px;
+  border-top: none;
+}
+
+.press-logo {
+  width: 12%;
+  margin: 20px 20px 40px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 10% 10%;
+}
+
+.pricing-column {
+  padding: 5% 2%;
+}
+
+.card {
+  box-shadow:  1px 1px 25px 1px #343a40;
+  /* box-shadow: (inset for inner shadow) h-offset v-offset blur spread color;     */
+}
+
+.card-body {
+  height: 21.875rem;
+  /* Determines the vertical size of the cards. 21.875rem 350px*/
+  position: relative;
+}
+
+.price-text {
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.pricing-info {
+  margin-top: 20px;
+}
+
+.pricing-button {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  width: 80%;
+  color: #ff4c68;
+}
+
+/* Call to Action */
+#cta .big-heading {
+  font-size: 2.5rem;
+}
+
+/* Footer Section */
+.footer-anch {
+  color: #343a40;
+}
+
+.footer-anch:hover {
+  color: #ff4c68;
+}
+
+.footer-icons {
+  margin: 3% 1%
+}
+
+#footer .container-fluid {
+  padding-bottom: 0px;
+}
+
+/* Media Query */
+/* General Lay-out for devices smaller than Desktops */
+@media (min-width: 480px) and (max-width: 1028px) {
+  #title .container-fluid {
+    text-align: center;
+  }
+
+  .title-col {
+    padding: 2% 0%;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* Mobile Size */
+@media (max-width: 480px) {
+  .big-heading {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    padding-bottom: 40px;
+  }
+
+  .navbar-brand {
+    position: static;
+    font-size: 1.75rem;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    width: 80%;
+    margin: 30px 0px;
+  }
+
+  #title .container-fluid {
+    text-align: center;
+  }
+
+  .carousel-inner {
+    /* background-color: red; */
+    height: 350px;
+  }
+
+  .testimonial-text {
+    font-size: 1.8rem;
+  }
+
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  #pricing {
+    padding: 20% 18%;
+  }
+
+  .card-body {
+    height: 300px;
+  }
+
+  .pricing-card {
+    margin: 10px 0px;
+  }
+
+  .price-text {
+    font-size: 1.8rem;
+  }
+
+  .pricing-user {
+    font-size: 1.3rem;
+  }
+
+  .pricing-info {
+    margin-top: 10px;
+  }
+
+  #cta .big-heading {
+    font-size: 1.5rem;
+  }
+}
